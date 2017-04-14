@@ -1,0 +1,19 @@
+html, body { padding: 0; margin: 0; color: black; font-family: "Arial", Helvetica, times new roman; }
+
+h1 { font-size: 40px; font-weight: 300; }
+
+p { line-height: 30px; margin-top: 0; margin-bottom: 20px; }
+
+.container { max-width: 960px; display: block; margin: 0 auto; }
+
+.intro { margin-top: 30px; margin-bottom: 60px; }
+
+.center-text { text-align: center; }
+
+.tool { cursor: help; color: red; position: relative; text-decoration: underline; }
+.tool:before { position: absolute; z-index: -100; opacity: 0; content: ""; top: -20px; left: 15%; border-style: solid; border-width: 20px 20px 0 20px; border-color: #6980fe transparent transparent transparent; }
+.tool:after { position: absolute; z-index: -100; opacity: 0; content: ""; background-color: #6980fe; content: attr(data-tip); bottom: 37px; left: -100%; font-size: 13px; right: -60px; padding: 10px; line-height: 18px; color: white; max-width: 20em; border-radius: 4px; }
+.tool:hover:before, .tool:focus:before { opacity: 1; z-index: 1; }
+.tool:hover:after, .tool:focus:after { opacity: 1; z-index: 1; }
+
+/*# sourceMappingURL=styles.css.map */
